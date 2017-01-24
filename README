@@ -1,0 +1,13 @@
+Smount is a library for mount sub file systems. For example if you want 
+make a directory be your working space, you may use smount to organize 
+files and directories under the root. 
+
+First, you need mount your file system. Each sub FS has its own root 
+and that's all what you need to initialize. Then you are able to oprate 
+the FS, such as reading files, writing files, deleting files, etc. One 
+of the important things is that you should check error code after every 
+single operation and use sm_errstr to get error messages. 
+    
+See ./test for examples. 
+
+Copyright (c) 2017 chai(neonum)
